@@ -2,13 +2,16 @@
 {
     public class PackageUpdate
     {
-        public PackageUpdate(string status)
+        public PackageUpdate(string status, int packageId)
         {
-            Status = status;
+            Status     = status;
             UpdateDate = DateTime.Now;
+            PackageId  = packageId;
         }
 
         public int Id { get; private set; }
+
+        public int PackageId { get; private set; }
 
         public string Status { get; private set; }
 
