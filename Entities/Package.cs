@@ -12,6 +12,18 @@
             Updates   = new List<PackageUpdate>();
         }
 
+        public void AddUpdate(string status, bool delivered)
+        {
+            if (Delivered)
+                throw new Exception("O pacote já foi entregue");
+
+            var update = new PackageUpdate(status, Id);
+            Updates.Add(update);
+
+            Delivered = delivered;
+            
+        }
+
         public int Id { get; private set; }
 
         public string Code { get; private set; }

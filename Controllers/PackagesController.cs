@@ -1,4 +1,5 @@
 ﻿using DevTrackR.Entities;
+using DevTrackR.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DevTrackR.Controllers
@@ -42,24 +43,25 @@ namespace DevTrackR.Controllers
         /// <param name="package"></param>
         /// <returns></returns>
         [HttpPost]
-        public IActionResult Post(Package package)
+        public IActionResult Post(AddPackageInputModel model)
         {
-            return Ok();
+            var package = new Package(model.Title, model.Weight);
+
+            return Ok(package);
         }
 
         /// <summary>
-        /// Altera os dados de um pacote existente
+        /// Cria um novo update para um pacote específico
         /// </summary>
+        /// <param name="code"></param>
         /// <returns></returns>
-        [HttpPut("{code}")]
-        public IActionResult Put(string code)
+        [HttpPost("{code}/updates")]
+        public IActionResult PostUpdate(string code, AddPackageUpdateInputModel model)
         {
-            return Ok();
-        }
+            var package = new Package("Pacote 1", 1.2M);
 
-        [HttpPost("{code}")]
-        public IActionResult PostUpdate(string code)
-        {
+            package.AddUpdate(model.Status, model.Delivered);
+
             return Ok();
         }
     }
