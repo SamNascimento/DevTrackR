@@ -56,5 +56,11 @@ namespace DevTrackR.Controllers
         {
             return Ok();
         }
+
+        [HttpPost("{code}")]
+        public IActionResult PostUpdate(string code)
+        {
+            return Ok();
+        }
     }
 }
