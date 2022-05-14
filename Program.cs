@@ -7,7 +7,7 @@ using SendGrid.Extensions.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<DevTrackRContext>(o => o.UseInMemoryDatabase("DevTrackR"));
+builder.Services.AddDbContext<DevTrackRContext>(o => o.UseInMemoryDatabase("DevTrackRDb"));
 builder.Services.AddScoped<IPackageRepository, PackageRepository>();
 
 var sendGridApiKey = builder.Configuration.GetSection("SendGridApiKey").Value;
@@ -39,7 +39,8 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+//if (app.Environment.IsDevelopment())
+if (true)
 {
     app.UseSwagger();
     app.UseSwaggerUI();
