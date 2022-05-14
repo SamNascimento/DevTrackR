@@ -25,3 +25,10 @@ C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\Swashbuc
 C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\obj\Debug\net6.0\DevTrackR.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\obj\Debug\net6.0\DevTrackR.csproj.CopyComplete
+C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll

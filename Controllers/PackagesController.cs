@@ -1,6 +1,6 @@
 ﻿using DevTrackR.Entities;
 using DevTrackR.Models;
-using DevTrackR.Persistence;
+using DevTrackR.Persistence.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DevTrackR.Controllers
@@ -9,10 +9,10 @@ namespace DevTrackR.Controllers
     [Route("api/packages")]
     public class PackagesController : ControllerBase
     {
-        private readonly DevTrackRContext _context;
-        public PackagesController(DevTrackRContext context)
+        private readonly IPackageRepository _repository;
+        public PackagesController(IPackageRepository repository)
         {
-            _context = context;
+            _repository = repository;
         }
 
         /// <summary>
@@ -22,7 +22,7 @@ namespace DevTrackR.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var packages = _context.Packages;
+            var packages = _repository.GetAll();
 
             return Ok(packages);
         }
@@ -35,10 +35,9 @@ namespace DevTrackR.Controllers
         [HttpGet("{code}")]
         public IActionResult GetByCode (string code)
         {
-            var package = _context.Packages
-                .SingleOrDefault(p => p.Code == code);
+            var package = _repository.GetByCode(code);
 
-            if(package == null)
+            if (package == null)
                 return NotFound();
 
             return Ok(package);
@@ -57,7 +56,7 @@ namespace DevTrackR.Controllers
 
             var package = new Package(model.Title, model.Weight);
 
-            _context.Packages.Add(package);
+            _repository.Add(package);
 
             return CreatedAtAction(
                 "GetByCode", 
@@ -74,13 +73,14 @@ namespace DevTrackR.Controllers
         [HttpPost("{code}/updates")]
         public IActionResult PostUpdate(string code, AddPackageUpdateInputModel model)
         {
-            var package = _context.Packages
-                .SingleOrDefault(p => p.Code == code);
+            var package = _repository.GetByCode(code);
 
             if (package == null)
+            {
                 return NotFound();
+            }
 
-            package.AddUpdate(model.Status, model.Delivered);
+            _repository.Update(package);
 
             return NoContent();
         }
