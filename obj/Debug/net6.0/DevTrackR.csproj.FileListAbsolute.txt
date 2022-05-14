@@ -32,3 +32,9 @@ C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\Microsof
 C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\SendGrid.dll
+C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\SendGrid.Extensions.DependencyInjection.dll
+C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\StarkbankEcdsa.dll
+C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\bin\Debug\net6.0\DevTrackR.xml
+C:\Users\Desktop\Documents\Estudos\DevTrackR\DevTrackR\obj\Debug\net6.0\DevTrackR.xml

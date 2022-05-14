@@ -21,16 +21,16 @@ builder.Services.AddSwaggerGen(o =>
 {
     o.SwaggerDoc("v1", new OpenApiInfo()
     {
-        Title = "DevTrackR.API",
+        Title = "DevTrackR",
         Version = "v1",
         Contact = new OpenApiContact
         {
-            Name  = "Samuel Nascimento",
+            Name = "Samuel Nascimento",
             Email = "samuel.pn15@gmail.com",
         }
     });
 
-    var xmlPath = Path.Combine(AppContext.BaseDirectory, "DevTrackR.API.xml");
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, "DevTrackR.xml");
     o.IncludeXmlComments(xmlPath);
 });
 

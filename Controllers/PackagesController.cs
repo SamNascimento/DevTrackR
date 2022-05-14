@@ -34,8 +34,15 @@ namespace DevTrackR.Controllers
         /// <summary>
         /// Retorna informação de um pacote específico
         /// </summary>
-        /// <param name="code"></param>
-        /// <returns></returns>
+        /// <remarks>
+        /// {
+        ///  "code": 1234
+        /// }
+        /// </remarks>
+        /// <param name="code">Código de rastreio do pacote</param>
+        /// <returns>Retorna o objeto correspondente aquele código</returns>
+        /// <response code="200">Objeto encontrado e retornado</response>
+        /// <response code="404">Nenhum objeto com esse código foi encontrado</response>
         [HttpGet("{code}")]
         public IActionResult GetByCode (string code)
         {
@@ -50,15 +57,15 @@ namespace DevTrackR.Controllers
         /// <summary>
         /// Cria um pacote novo
         /// </summary>
-        /// <remark>
+        /// <remarks>
         /// {
-        ///  "title",
-        ///  "weight",
-        ///  "senderName",
-        ///  "senderEmail
+        ///  "title": "Pacote teste para reprodução",
+        ///  "weight": 1.8,
+        ///  "senderName": "Samuel",
+        ///  "senderEmail: "emailteste@teste.com"
         /// }
-        /// </remark>
-        /// <param name="package">Dados do pacote</param>
+        /// </remarks>
+        /// <param name="model">Dados do pacote</param>
         /// <returns>Objeto recém criado com caminho para o método de busca de detalhes</returns>
         /// <response code="201">Cadastro realizado com sucesso</response>
         /// <response code="400">Dados inválidos</response>
@@ -91,10 +98,22 @@ namespace DevTrackR.Controllers
         }
 
         /// <summary>
-        /// Cria um novo update para um pacote específico
+        /// Cria um novo update para um pacote específico rastreando ele pelo code
         /// </summary>
-        /// <param name="code"></param>
-        /// <returns></returns>
+        /// <remarks>
+        /// {
+        ///  "code": 1234
+        ///  "Status": "Texto com o status atualizado do pacote",
+        ///  "Delivered": True/False,
+        ///  "senderName": "Samuel",
+        ///  "senderEmail: "emailteste@teste.com"
+        /// }
+        /// </remarks>
+        /// <param name="code">Código de rastreio do pacote</param>
+        /// <param name="model">Dados do pacote</param>
+        /// <returns>Não retorna conteúdo, apenas atualiza e persiste a mudança da atualização</returns>
+        /// <response code="204">Atualização ocorreu com sucesso, não retorna dados</response>
+        /// <response code="404">Nenhum objeto com esse código foi encontrado</response>
         [HttpPost("{code}/updates")]
         public async Task<IActionResult> PostUpdate(string code, AddPackageUpdateInputModel model)
         {
