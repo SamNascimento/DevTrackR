@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AXHTqUNaVd+0zmHlNCw7PMFbmuFkfyVNa+Lkn4UMG7KrGs5tcfnvTrmklxUHyuaQvm37xYdRXm1gHqYxexCpNQ==",
+  "dgSpecHash": "gaOnCNzB2uB/2MW3EbAn20WKP9NJ6DR6fLxGAXlhvXq5ZqNM5e69l8gnEaHvxPDe8Jm7kx79dBt4P87T0HARuw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Desktop\\Documents\\Estudos\\DevTrackR\\DevTrackR\\DevTrackR.csproj",
   "expectedPackageFiles": [
@@ -27,9 +27,9 @@
     "C:\\Users\\Desktop\\.nuget\\packages\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
     "C:\\Users\\Desktop\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Desktop\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
-    "C:\\Users\\Desktop\\.nuget\\packages\\sendgrid\\9.24.3\\sendgrid.9.24.3.nupkg.sha512",
+    "C:\\Users\\Desktop\\.nuget\\packages\\sendgrid\\9.27.0\\sendgrid.9.27.0.nupkg.sha512",
     "C:\\Users\\Desktop\\.nuget\\packages\\sendgrid.extensions.dependencyinjection\\1.0.1\\sendgrid.extensions.dependencyinjection.1.0.1.nupkg.sha512",
-    "C:\\Users\\Desktop\\.nuget\\packages\\starkbank-ecdsa\\1.3.1\\starkbank-ecdsa.1.3.1.nupkg.sha512",
+    "C:\\Users\\Desktop\\.nuget\\packages\\starkbank-ecdsa\\1.3.3\\starkbank-ecdsa.1.3.3.nupkg.sha512",
     "C:\\Users\\Desktop\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\Desktop\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\Desktop\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
